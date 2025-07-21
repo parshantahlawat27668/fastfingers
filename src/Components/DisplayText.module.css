@@ -1,0 +1,135 @@
+.main{
+    background-color: #111;
+    /* color: rgb(16, 169, 16); */
+    color: rgb(6, 146, 6);
+
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.focusDiv{
+position: relative;
+max-width: 80%;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+outline: none;
+padding: 0px 0px;   
+margin: 0px auto;
+text-align:inherit;
+} 
+.words{
+    padding: 0px;
+    height: 120px;
+    width: 100%;
+    align-items: flex-start;
+    align-content:flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    font-size:1.4rem;
+    font-weight: 400;
+    position: relative;
+    top:0px;
+    line-height: 1.9rem;
+}
+.word{
+    display: flex;
+     gap: 2px;
+
+}
+.letter{
+    padding:0px;
+    margin:0px;
+    background-color:transparent;
+    z-index: 50;
+}
+.words{
+    filter: blur(3px);
+}
+.focusDiv:focus .words{
+    filter: blur(0px);
+}
+
+.focusDiv:focus .focusError{
+    display: none;
+}
+.focusError{
+position: absolute;
+font-size: 3.5vh;
+font-weight: 500;   
+color:yellow;
+display: flex;
+align-items: center;
+justify-content: centers;
+gap:5px;
+padding: 5px 14px;
+border-radius: 8px;
+background-color: rgba(23, 23, 23, 0.371);
+}
+
+
+.cursor{
+    position:fixed;
+    display: none;
+    top:0px;
+    left:0px;
+    height:22px;
+    width: 0.1rem;
+    border-radius: 5px;
+    background-color: rgb(197, 24, 203);
+    z-index: 100;
+    box-sizing: content-box;
+    animation: cursorAnimation 0.4s  infinite alternate;
+    /* display: none; */
+    transition: top 0.1s ease-out, left 0.1s ease-out;
+}
+.main:focus .cursor{
+    display:block
+}
+.againBtn{
+    padding: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.againBtn:hover{
+    color: yellow;
+}
+
+
+@keyframes cursorAnimation {
+    0%{
+       opacity: 0;
+    }
+    100%{
+  opacity: 1;
+    }
+}
+
+
+
+
+
+ /* Utility classes */
+ .currentWord {
+
+  }
+.currentLetter{
+   
+    }
+ .word{
+
+ }
+ .typed{
+}
+
+.right{
+     color: rgba(0, 128, 0, 0.526);
+ 
+ }
+ .wrong{
+  color:rgba(255, 0, 0, 0.601);
+ }

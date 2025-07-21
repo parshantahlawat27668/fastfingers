@@ -1,0 +1,27 @@
+.main{
+    margin:0px;
+    padding: 0px;
+    width:100%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 40%;
+    height: 100%;
+    border: 1px solid rgb(27, 174, 27);
+    padding: 10px 20px;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container h1{
+    font-size: 30px;
+}
+.object{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}

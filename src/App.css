@@ -1,0 +1,19 @@
+body{
+margin: 0px;
+padding: 0px;
+background-color: #111;
+color: rgb(16, 169, 16);
+}
+*{
+    font-family: Dosis;
+}
+
+/* theme classes */
+.light{
+    background-color:rgb(243, 242, 193);
+    color: rgb(16, 169, 16);
+}
+.dark{
+    background-color: #111;
+    color: rgb(16, 169, 16);
+}
